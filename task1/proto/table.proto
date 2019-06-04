@@ -1,0 +1,35 @@
+syntax= "proto3";
+
+
+package ayush;
+
+option go_package = "ayushpb";
+
+message tableRequest {
+    int32 number = 1;
+}
+
+message tableResponse {
+    int32 result = 1;
+}
+
+message greetingsRequest {
+    string  a =1;
+}
+message greetingsResponse {
+    string b =1;
+}
+message divisorResponse{
+    int32 num =1;
+}
+
+
+service CalculatorService {
+    // Unary
+    rpc tables (tableRequest) returns (tableResponse) {};
+
+    rpc greet (greetingsRequest) returns (greetingsResponse) {};
+
+    // BiDirectional Streaming
+    rpc GCD (stream tableRequest) returns (stream divisorResponse) {};
+}
