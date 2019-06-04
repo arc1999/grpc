@@ -1,8 +1,9 @@
 This project is for my basic understanding of GRPC.
-
-
+<br />
+<br />
 HOW TO RUN THE CODE?
--> To run the code navigate to task1/  
+<br />
+-> To run the code navigate to task1/ <br />  
 -> Run the main.go file  
 
 OUTPUT:
